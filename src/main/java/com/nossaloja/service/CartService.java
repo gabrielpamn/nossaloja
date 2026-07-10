@@ -26,7 +26,9 @@ public class CartService {
     }
 
     public void addProduct(Long productId, HttpSession session) {
-        getCart(session).add(productId);
+        List<Long> cart = getCart(session);
+        cart.add(productId);
+        session.setAttribute(CART_KEY, cart);
     }
 
     public void clear(HttpSession session) {

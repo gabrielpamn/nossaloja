@@ -1,0 +1,12 @@
+.git
+.gitignore
+.gitattributes
+
+infos
+
+target
+*.log
+
+.idea
+.vscode
+.DS_Store
